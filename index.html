@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турпал-Али | Стоматология</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts для стильного шрифта -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Кнопка переключения темы -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg class="logo-tooth" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2C10 6 8 10 6 12C4 14 4 18 6 20C8 22 10 22 12 20C14 22 16 22 18 20C20 18 20 14 18 12C16 10 14 6 12 2Z" />
+                    <path d="M10 8L12 10L14 8" stroke-linecap="round" />
+                </svg>
+                <span class="logo-text">Турпал-Али <small>Стоматолог</small></span>
+            </a>
+            <div class="header-contacts">
+                <span class="address">📍 ул. Умара Кодырова, 21</span>
+                <a href="tel:+79667222244" class="phone">8 (966) 722-22-44</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Ваша <span class="highlight">идеальная улыбка</span> начинается здесь</h1>
+                <p>Современная стоматология с душой. Доктор Турпал-Али — точность, комфорт и доступные цены.</p>
+                <a href="#services" class="btn btn-primary">Смотреть услуги</a>
+            </div>
+            <div class="hero-image">
+                <!-- Анимированная иллюстрация зуба -->
+                <div class="floating-tooth">
+                    <svg width="180" height="180" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.2"/>
+                        <path d="M50 10 C35 25 20 45 20 60 C20 78 35 90 50 95 C65 90 80 78 80 60 C80 45 65 25 50 10Z" fill="var(--accent)" opacity="0.15"/>
+                        <path d="M50 20 C38 32 28 48 28 60 C28 75 38 85 50 88" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="42" cy="55" r="4" fill="var(--accent)" opacity="0.5"/>
+                        <circle cx="58" cy="55" r="4" fill="var(--accent)" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="floating-star">✨</div>
+            </div>
+        </div>
+        <div class="wave-divider"></div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Услуги и цены</h2>
+            <div class="services-grid">
+                <!-- Карточка "Лечение зуба" -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <svg viewBox="0 0 60 60" width="60" height="60">
+                            <path d="M30 8 C22 18 16 28 16 38 C16 48 22 54 30 56 C38 54 44 48 44 38 C44 28 38 18 30 8Z" fill="var(--accent)" opacity="0.2" stroke="var(--accent)" stroke-width="2"/>
+                            <circle cx="25" cy="38" r="3" fill="var(--accent)"/>
+                            <circle cx="35" cy="38" r="3" fill="var(--accent)"/>
+                            <path d="M24 32 L36 32" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Лечение зуба</h3>
+                    <span class="price">3 000 ₽</span>
+                </div>
+                <!-- Card: Удаление зуба -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <svg viewBox="0 0 60 60" width="60" height="60">
+                            <path d="M30 10 C24 18 20 26 20 34 C20 42 24 48 30 50 C36 48 40 42 40 34 C40 26 36 18 30 10Z" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="2"/>
+                            <line x1="22" y1="34" x2="38" y2="34" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Удаление зуба</h3>
+                    <span class="price">4 000 ₽</span>
+                </div>
+                <!-- Card: Чистка зубов -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <svg viewBox="0 0 60 60" width="60" height="60">
+                            <rect x="22" y="14" width="16" height="32" rx="4" fill="var(--accent)" opacity="0.2" stroke="var(--accent)" stroke-width="1.5"/>
+                            <path d="M14 20 L18 24 M46 20 L42 24" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="30" cy="36" r="3" fill="var(--accent)" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <h3>Чистка зубов</h3>
+                    <span class="price">2 500 ₽</span>
+                </div>
+                <!-- Card: Импланты -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <svg viewBox="0 0 60 60" width="60" height="60">
+                            <rect x="25" y="12" width="10" height="36" rx="3" fill="var(--accent)" opacity="0.25"/>
+                            <circle cx="30" cy="22" r="6" fill="var(--accent)" opacity="0.3" stroke="var(--accent)" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Импланты</h3>
+                    <span class="price">20 000 ₽</span>
+                </div>
+                <!-- Card: Брекеты -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <svg viewBox="0 0 60 60" width="60" height="60">
+                            <path d="M18 24 L42 24 M18 30 L42 30 M18 36 L42 36" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="22" cy="24" r="2.5" fill="var(--accent)"/>
+                            <circle cx="30" cy="24" r="2.5" fill="var(--accent)"/>
+                            <circle cx="38" cy="24" r="2.5" fill="var(--accent)"/>
+                            <circle cx="22" cy="30" r="2.5" fill="var(--accent)"/>
+                            <circle cx="30" cy="30" r="2.5" fill="var(--accent)"/>
+                            <circle cx="38" cy="30" r="2.5" fill="var(--accent)"/>
+                            <circle cx="22" cy="36" r="2.5" fill="var(--accent)"/>
+                            <circle cx="30" cy="36" r="2.5" fill="var(--accent)"/>
+                            <circle cx="38" cy="36" r="2.5" fill="var(--accent)"/>
+                        </svg>
+                    </div>
+                    <h3>Брекеты</h3>
+                    <span class="price">50 000 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Акция -->
+    <section class="promo">
+        <div class="container promo-inner">
+            <div class="promo-badge">Акция</div>
+            <h2>👥 Приведи друга — получи <span class="gold">скидку 50%</span></h2>
+            <p>Ваш друг тоже получает <strong>специальную скидку</strong> на первое посещение. Акция действует на все услуги.</p>
+            <a href="tel:+79667222244" class="btn btn-light">Записаться по акции</a>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">Новости стоматологии</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-img">
+                        <span class="news-date">15 мая</span>
+                        <svg viewBox="0 0 100 60" width="100%" height="100%">
+                            <rect width="100" height="60" fill="var(--accent)" opacity="0.1"/>
+                            <circle cx="30" cy="30" r="15" fill="var(--accent)" opacity="0.2"/>
+                            <path d="M20 30 L40 30 M30 20 L30 40" stroke="var(--accent)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Новая технология отбеливания</h3>
+                    <p>Теперь осветление эмали на 8 тонов всего за одно посещение. Безопасно и быстро.</p>
+                </article>
+                <article class="news-card">
+                    <div class="news-img">
+                        <span class="news-date">3 мая</span>
+                        <svg viewBox="0 0 100 60" width="100%" height="100%">
+                            <rect width="100" height="60" fill="var(--accent)" opacity="0.1"/>
+                            <path d="M20 45 L50 25 L80 45" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Бесплатная консультация ортодонта</h3>
+                    <p>В мае приём ортодонта с составлением плана лечения — бесплатно для новых пациентов.</p>
+                </article>
+                <article class="news-card">
+                    <div class="news-img">
+                        <span class="news-date">20 апреля</span>
+                        <svg viewBox="0 0 100 60" width="100%" height="100%">
+                            <rect width="100" height="60" fill="var(--accent)" opacity="0.1"/>
+                            <circle cx="50" cy="30" r="18" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4 3"/>
+                            <circle cx="50" cy="30" r="8" fill="var(--accent)" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>Цифровой дизайн улыбки</h3>
+                    <p>Теперь вы можете увидеть свою будущую улыбку ещё до начала лечения благодаря 3D-моделированию.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3>📍 Адрес</h3>
+                <p>ул. Умара Кодырова, 21</p>
+            </div>
+            <div class="footer-col">
+                <h3>📞 Телефон</h3>
+                <a href="tel:+79667222244">8 (966) 722-22-44</a>
+            </div>
+            <div class="footer-col">
+                <h3>🕒 Часы работы</h3>
+                <p>Пн–Сб: 9:00 – 20:00<br>Вс: выходной</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Турпал-Али. Стоматология высокого уровня.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипт переключения темы -->
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = toggle.querySelector('.theme-icon');
+
+        // Проверяем сохранённую тему
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            icon.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            icon.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
